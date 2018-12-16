@@ -5,10 +5,10 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">{{ .position }}</h3>
+                            <h3 class="company">{{ .company}}</h3>
                             <div class="time">{{ .dates }}</div>
                         </div><!--//upper-row-->
-                        <div class="company">{{ .company }}</div>
+                        <div class="job-title">{{ .position }}</div>
                     </div><!--//meta-->
                     <div class="details">
                         <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
